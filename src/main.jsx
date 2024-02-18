@@ -11,16 +11,12 @@ import {
   Navigate
 } from "react-router-dom";
 
-  import UseReducer from "./components/reducer/UseReducer.jsx";
-import UseCallback from "./components/UseCallback";
-import UseMemo from "./components/UseMemo";
-import UseCustom from "./components/UseCustom";
-import UseEffect from "./components/UseEffect";
-import UseState from "./components/UseState";
+import  {UseState,UseReducer,UseCallback,UseMemo,UseCustom,UseEffect} from './components/index.js';
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   // <React.StrictMode>
+  <div className='border-4 border-blue-600'>
     <Router>
       
       <App/>
@@ -35,6 +31,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="*" element={<Navigate to='/' replace />} ></Route>
       </Routes>
     </Router>
+  </div>
 
   // </React.StrictMode>
 )
